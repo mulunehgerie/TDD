@@ -65,5 +65,5 @@ public class LinkedListTest {
         list.remove(2);
         assertEquals(2, list.size());
     }
-
+//some comments
 }

@@ -1,4 +1,5 @@
 package TDD;
+
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -14,6 +15,7 @@ public class LinkedListTest {
         list.add(5);
         list.printList();
     }
+
     @Test
     public void testRemove() {
         LinkedList list = new LinkedList();
@@ -26,12 +28,14 @@ public class LinkedListTest {
         System.out.println("List after remove");
         list.printList();
     }
+
     @Test
     public void testEmptyList() {
         LinkedList list = new LinkedList();
         assertTrue(list.isEmpty());
         assertEquals(0, list.size());
     }
+
     @Test
     public void testContains() {
         LinkedList list = new LinkedList();
@@ -44,5 +48,6 @@ public class LinkedListTest {
         assertTrue(list.contains(3));
         assertFalse(list.contains(6));
     }
-    
+    // TDD aproach is wirting tescases befor implementing of the algorithms.
+
 }

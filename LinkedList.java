@@ -53,6 +53,14 @@ public class LinkedList {
     public int size() {
         return size;
     }
+    public void printList() {
+        ListNode current = head;
+        while (current != null) {
+            System.out.print(current.val + " ");
+            current = current.next;
+        }
+        System.out.println();
+    }
 
     
 }

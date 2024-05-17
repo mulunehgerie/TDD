@@ -12,7 +12,7 @@ public class LinkedList {
             }
             current.next = newNode;
         }
-        
+        size++; // Increment size when adding a new element
     }
     
 }

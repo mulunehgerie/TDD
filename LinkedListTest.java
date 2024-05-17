@@ -59,6 +59,7 @@ public class LinkedListTest {
 
         list.add(2);
         list.add(3);
+        
         assertEquals(3, list.size());
 
         list.remove(2);

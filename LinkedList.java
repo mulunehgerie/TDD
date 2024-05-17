@@ -39,6 +39,7 @@ public class LinkedList {
         }
     }
     public boolean isEmpty() {
+        //Returns true if the list is empty
         return head == null;
     }
     public boolean contains(int val) {

@@ -40,6 +40,16 @@ public class LinkedList {
     public boolean isEmpty() {
         return head == null;
     }
+    public boolean contains(int val) {
+        ListNode current = head;
+        while (current != null) {
+            if (current.val == val) {
+                return true;
+            }
+            current = current.next;
+        }
+        return false;
+    }
 
     
 }

@@ -13,6 +13,7 @@ public class LinkedList {
             current.next = newNode;
         }
         size++; // Increment size when adding a new element
+        
     }
     public void remove(int val) {
         if (head == null) {

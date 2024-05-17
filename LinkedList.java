@@ -52,6 +52,7 @@ public class LinkedList {
         return false;
     }
     public int size() {
+        //retun the number of elements in list
         return size;
     }
     public void printList() {

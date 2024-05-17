@@ -38,6 +38,7 @@ public class LinkedListTest {
 
     @Test
     public void testContains() {
+        //This method tests if the contains() works as desired
         LinkedList list = new LinkedList();
         list.add(1);
         list.add(2);
@@ -59,7 +60,7 @@ public class LinkedListTest {
 
         list.add(2);
         list.add(3);
-        
+
         assertEquals(3, list.size());
 
         list.remove(2);

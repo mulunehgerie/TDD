@@ -26,6 +26,11 @@ public class LinkedListTest {
         System.out.println("List after remove");
         list.printList();
     }
-
+    @Test
+    public void testEmptyList() {
+        LinkedList list = new LinkedList();
+        assertTrue(list.isEmpty());
+        assertEquals(0, list.size());
+    }
     
 }

@@ -37,6 +37,9 @@ public class LinkedList {
             current = current.next;
         }
     }
+    public boolean isEmpty() {
+        return head == null;
+    }
 
     
 }

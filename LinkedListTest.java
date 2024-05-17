@@ -1,4 +1,3 @@
-package TDD;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -31,7 +30,7 @@ public class LinkedListTest {
 
     @Test
     public void testEmptyList() {
-        //This checks if the method works as we need
+        // This checks if the method works as we need
         LinkedList list = new LinkedList();
         assertTrue(list.isEmpty());
         assertEquals(0, list.size());
@@ -39,7 +38,7 @@ public class LinkedListTest {
 
     @Test
     public void testContains() {
-        //This method tests if the contains() works as desired
+        // This method tests if the contains() works as desired
         LinkedList list = new LinkedList();
         list.add(1);
         list.add(2);
@@ -50,9 +49,11 @@ public class LinkedListTest {
         assertTrue(list.contains(3));
         assertFalse(list.contains(6));
     }
+
     // TDD aproach is wirting tescases befor implementing of the algorithms.
     @Test
     public void testSize() {
+        //Test the testStze() method
         LinkedList list = new LinkedList();
         assertEquals(0, list.size()); // Test for an empty list
 
@@ -67,5 +68,5 @@ public class LinkedListTest {
         list.remove(2);
         assertEquals(2, list.size());
     }
-//some comments
+    // some comments
 }

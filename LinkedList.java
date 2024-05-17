@@ -21,7 +21,7 @@ public class LinkedList {
 
         if (head.val == val) {
             head = head.next;
-           
+            size--; // Decrement size when removing an element
             return;
         }
 
@@ -30,7 +30,7 @@ public class LinkedList {
         while (current != null) {
             if (current.val == val) {
                 prev.next = current.next;
-               
+                size--; // Decrement size when removing an element
                 return;
             }
             prev = current;

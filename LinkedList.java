@@ -2,6 +2,7 @@ public class LinkedList {
     ListNode head;
     int size;
     public void add(int val) {
+        //This function adds elements to the list 
         ListNode newNode = new ListNode(val);
         if (head == null) {
             head = newNode;
@@ -39,6 +40,7 @@ public class LinkedList {
         }
     }
     public boolean isEmpty() {
+        //Returns true if the list is empty
         return head == null;
     }
     public boolean contains(int val) {
@@ -52,9 +54,11 @@ public class LinkedList {
         return false;
     }
     public int size() {
+        //retun the number of elements in list
         return size;
     }
     public void printList() {
+        //this prints the elements in the linked list
         ListNode current = head;
         while (current != null) {
             System.out.print(current.val + " ");

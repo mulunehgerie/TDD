@@ -49,5 +49,20 @@ public class LinkedListTest {
         assertFalse(list.contains(6));
     }
     // TDD aproach is wirting tescases befor implementing of the algorithms.
+    @Test
+    public void testSize() {
+        LinkedList list = new LinkedList();
+        assertEquals(0, list.size()); // Test for an empty list
+
+        list.add(1);
+        assertEquals(1, list.size());
+
+        list.add(2);
+        list.add(3);
+        assertEquals(3, list.size());
+
+        list.remove(2);
+        assertEquals(2, list.size());
+    }
 
 }

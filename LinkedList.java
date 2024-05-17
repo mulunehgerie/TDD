@@ -14,5 +14,29 @@ public class LinkedList {
         }
         size++; // Increment size when adding a new element
     }
+    public void remove(int val) {
+        if (head == null) {
+            return;
+        }
+
+        if (head.val == val) {
+            head = head.next;
+           
+            return;
+        }
+
+        ListNode prev = head;
+        ListNode current = head.next;
+        while (current != null) {
+            if (current.val == val) {
+                prev.next = current.next;
+               
+                return;
+            }
+            prev = current;
+            current = current.next;
+        }
+    }
+
     
 }

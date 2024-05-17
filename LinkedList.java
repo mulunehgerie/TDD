@@ -2,6 +2,7 @@ public class LinkedList {
     ListNode head;
     int size;
     public void add(int val) {
+        //This function adds elements to the list 
         ListNode newNode = new ListNode(val);
         if (head == null) {
             head = newNode;

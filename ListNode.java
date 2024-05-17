@@ -5,6 +5,7 @@ class ListNode {
 
     ListNode(int val) {
         this.val = val;
+        
     }
 }
  

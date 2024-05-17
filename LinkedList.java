@@ -50,6 +50,9 @@ public class LinkedList {
         }
         return false;
     }
+    public int size() {
+        return size;
+    }
 
     
 }

@@ -55,6 +55,7 @@ public class LinkedList {
         return size;
     }
     public void printList() {
+        //this prints the elements in the linked list
         ListNode current = head;
         while (current != null) {
             System.out.print(current.val + " ");

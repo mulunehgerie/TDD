@@ -31,6 +31,7 @@ public class LinkedListTest {
 
     @Test
     public void testEmptyList() {
+        //This checks if the method works as we need
         LinkedList list = new LinkedList();
         assertTrue(list.isEmpty());
         assertEquals(0, list.size());
